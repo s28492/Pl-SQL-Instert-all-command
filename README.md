@@ -8,11 +8,17 @@ Procedure Declaration: The procedure DML_INSERT_ALL takes a single parameter v_n
 Variable Declarations:
 
 v_insert_all: A string initialized to 'INSERT ALL', used as the beginning of the dynamic SQL statement.
+
 AssocTab: A user-defined associative array type for storing VARCHAR values.
+
 t_nazwy_kolumn and t_typy_danych: Associative arrays used to store column names and their respective data types from the input table.
+
 v_insert_into: Constructs the 'INTO' part of the SQL statement, specifying the target table and columns.
+
 v_values: Used to build the 'VALUES' clause of the SQL statement dynamically.
+
 v_iterator and v_liczba_wierszy: Integers used for iterating through records and counting rows, respectively.
+
 Dynamic SQL Execution:
 
 Retrieves the column names and data types of the input table and stores them in t_nazwy_kolumn and t_typy_danych.
